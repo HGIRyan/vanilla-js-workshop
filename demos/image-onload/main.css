@@ -1,0 +1,12 @@
+IMG {
+    opacity: 0;
+    transition: all .3s ease;
+}
+
+.appear {
+    opacity: 1;
+}
+
+#image1{
+    width: 100%;
+}

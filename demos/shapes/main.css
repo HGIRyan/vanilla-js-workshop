@@ -1,0 +1,22 @@
+BODY{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: deepskyblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .circle {
+    height: 100px; width: 100px;
+    border-radius: 50%;
+    background: purple;
+  }
+  .square {
+    height: 100px; width: 100px;
+    background: orange;
+  }
+  .rectangle {
+    height: 100px; width: 200px;
+    background: green;
+  }

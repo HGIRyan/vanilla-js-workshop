@@ -1,0 +1,18 @@
+BODY{
+    background: #232;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: url('https://opengameart.org/sites/default/files/grass_14.png')
+  }
+  #player{
+    height: 50px;
+    width: 50px;
+    background: deepskyblue;
+    background: url('https://www.gamestop.com/gs/images/content-pdp/pokemon-lets-go/partner-eevee.png');
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+  }

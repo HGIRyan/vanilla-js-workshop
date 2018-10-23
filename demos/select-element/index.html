@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>demo 1</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <section id="main">
+        <div class="float-note">
+            <div class="left active">
+            left
+            </div>
+            <div class="right">
+            right
+            </div>
+        </div>
+    </section>
+    <script>
+    // use Array.from so that we can filter a node list by the nodeType property
+    // only grabbing "Element" nodes, i.e. nodeType === 1
+    const sides = Array.from(document.getElementsByClassName('float-note')[0].childNodes).filter(node=>node.nodeType===1) // can also use .children to get ONLY element nodes
+    // loop over the two side elements and create onclick event listeners
+    // which will active the one clicked on and deactivate the other
+    sides.forEach(side=>{
+    side.onclick = function (e){
+        this.classList.add('active')
+        sides.forEach(y=>{
+        if (y !== side) y.classList.remove('active')
+        })
+    }
+    })
+    </script>
+</body>
+</html>

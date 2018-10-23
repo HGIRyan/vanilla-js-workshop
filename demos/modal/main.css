@@ -1,0 +1,37 @@
+* { box-sizing: border-box; font-family: inherit; }
+BODY{
+  height: 100vh; width: 100%; overflow: hidden;
+  background: #223;
+  display: flex; align-items: center;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+}
+.modal {
+  width: 800px;
+  background: #f7f7f7;
+  text-align: center;
+  color: #223;
+  padding: 1rem 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s ease;
+  position: relative;
+  top: -60px;
+  border-radius: 8px;
+}
+.modal P {
+  line-height: 1.5;
+}
+.show-modal .modal {
+  opacity: 1;
+  pointer-events: auto;
+  top: 0;
+}
+.button{
+  padding: .5rem;
+  background: #f7f7f7;
+  position: absolute;
+  top: 0; left: 0;
+  cursor: pointer;
+  user-select: none;
+}
